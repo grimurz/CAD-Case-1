@@ -21,15 +21,15 @@ max_depth = [14] # [int(x) for x in np.linspace(17, 19, 3)] # [14] # [17] #
 min_samples_split = [6] # [int(x) for x in np.linspace(5, 7, 3)] # [6] # 
 max_leaf_nodes = [20] #[int(x) for x in np.linspace(17, 23, 3)] # [20] #
 min_samples_leaf = [11] # [int(x) for x in np.linspace(10, 12, 3)] # [11] #
-max_features = [120] # [int(x) for x in np.linspace(110, 120, 5)] # [120] # 
+# max_features = [120] # [int(x) for x in np.linspace(110, 120, 5)] # [120] # 
 
 param_grid = {
     'n_estimators': n_estimators,
     'max_depth': max_depth,
     'min_samples_split': min_samples_split,
     'max_leaf_nodes': max_leaf_nodes,
-    'min_samples_leaf': min_samples_leaf,
-    'max_features': max_features
+    'min_samples_leaf': min_samples_leaf#,
+    # 'max_features': max_features
 }
 
 
@@ -80,7 +80,7 @@ rf = RandomForestRegressor(
         min_samples_split = 6,
         max_leaf_nodes = 20,
         min_samples_leaf = 11,
-        max_features = 20,
+        # max_features = 120,
         bootstrap = True,
         oob_score = True,
         random_state = 42

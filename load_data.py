@@ -49,5 +49,5 @@ X_train, X_test, y_train, y_test = train_test_split(
 # test5 = data['C_ 5'].value_counts()
 
 # del X_temp, y_temp
-del temp_df, i, col
+# del temp_df, i, col
 del data, data_np
