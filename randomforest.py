@@ -2,7 +2,7 @@
 from load_data import X_train, y_train, X_test, y_test #, X_val, y_val
 
 import numpy as np
-from tabulate import tabulate
+# from tabulate import tabulate
 
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import GridSearchCV
