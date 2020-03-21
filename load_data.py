@@ -7,13 +7,13 @@ from knn_impute import knn_impute
 
 data = pd.read_csv('./Case Data/case1Data.txt', delimiter = ", ")
 
-
 data['C_ 1'] = pd.Categorical(data['C_ 1']).codes
 data['C_ 2'] = pd.Categorical(data['C_ 2']).codes
 data['C_ 3'] = pd.Categorical(data['C_ 3']).codes
 data['C_ 4'] = pd.Categorical(data['C_ 4']).codes
 data['C_ 5'] = pd.Categorical(data['C_ 5']).codes
 
+data_non_1ook = data.copy()
 
 # for i in range(1,6):
 #     col = 'C_ ' + str(i)    
